@@ -76,8 +76,8 @@
                                 <div class="swiper-slide">
                                     <a href="#">
                                         <picture class="hero__picture">
-                                            <source srcset="images/banner2_320.jpg" media="(max-width: 500px)">
-                                            <img src="images/banner2.jpg" alt="">
+                                            <source srcset="images/banner320.jpg" media="(max-width: 500px)">
+                                            <img src="images/banner.jpg" alt="">
                                         </picture>
                                     </a>
                                 </div>
@@ -92,8 +92,8 @@
                                 <div class="swiper-slide">
                                     <a href="#">
                                         <picture class="hero__picture">
-                                            <source srcset="images/banner2_320.jpg" media="(max-width: 500px)">
-                                            <img src="images/banner2.jpg" alt="">
+                                            <source srcset="images/banner320.jpg" media="(max-width: 500px)">
+                                            <img src="images/banner.jpg" alt="">
                                         </picture>
                                     </a>
                                 </div>
@@ -131,6 +131,30 @@
                                     <div class="contacts__item-desc">
                                         Задавайте вопросы
                                     </div>
+                                </div>
+                                <div class="contacts__social social">
+                                    <ul class="social__list row">
+                                        <li class="social__item">
+                                            <a class="social__link" href="#">
+                                                <svg class="icon icon-Vk"><use xlink:href="images/sprite.svg#icon-Vk"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="#">
+                                                <svg class="icon icon-Telegram"><use xlink:href="images/sprite.svg#icon-Telegram"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="#">
+                                                <svg class="icon icon-whatsapp"><use xlink:href="images/sprite.svg#icon-whatsapp"></use></svg>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link" href="#">
+                                                <svg class="icon icon-youtube-svgrepo-com"><use xlink:href="images/sprite.svg#icon-youtube-svgrepo-com"></use></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +235,7 @@
                                                         var myMap = new ymaps.Map('map', {
                                                                 center: [55.792148, 37.540922],
                                                                 zoom: 15,
-                                                                controls: ['zoomControl'],
+                                                                controls: [],
                                                             }),
 
                                                             // Создаём макет содержимого.
@@ -234,11 +258,7 @@
                                                                 // // Смещение левого верхнего угла иконки относительно
                                                                 // // её "ножки" (точки привязки).
                                                                 // iconImageOffset: [-5, -38]
-                                                                iconShape: {
-                                                                    type: 'Circle',
-                                                                    coordinates: [0, 0],
-                                                                    radius: 23
-                                                                }
+                                                                
                                                             });
 
                                                            
@@ -256,9 +276,55 @@
                     </div>
                 </div>
             </div>
+            <div class="banner-bottom">
+                <a href="#" class="banner-bottom__link">
+                    <picture class="banner-bottom__picture">
+                        <source srcset="images/banner2_320.jpg" media="(max-width: 500px)">
+                        <img src="images/banner2.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
         </main>
         <footer class="footer">
-
+           <div class="container">
+            <div class="footer__top">
+                
+                <div class="footer__top-row row row--wrap">
+                    <div class="footer__item">
+                        <div class="footer__menu-title">
+                            Федерация
+                            <div class="footer__menu-toggler">
+                                <svg class="icon icon-down"><use xlink:href="images/sprite.svg#icon-down"></use></svg>
+                            </div>
+                        </div>
+                        <ul class="footer__menu-list">
+                            <li><a href="#">Президиум</a></li>
+                            <li><a href="#">Дирекция</a></li>
+                            <li><a href="#">Спортивно-технический комитет</a></li>
+                            <li><a href="#">Члены федерации</a></li>
+                            <li><a href="#">Заслуженные тренеры</a></li>
+                            <li><a href="#">Внести пожертвование</a></li>
+                            <li><a href="#">Оплатить членский взнос</a></li>
+                        </ul>
+                    </div>
+                </div>
+          
+        </div>
+        <div class="footer__bottom">
+           
+                <div class="footer__bottom-row row">
+                    <div class="footer__copy">
+                        © 2022 ФФКМ. Все права защищены
+                    </div>
+                    <a class="footer__policy" href="#">Политика конфиденциальности</a>
+                    <div class="footer__develop">
+                        Разработка сайта:
+                        <img src="images/develop_logo.svg" alt="">
+                    </div>
+                </div>
+           
+        </div>
+           </div>
         </footer>
     </div>
 @@include('includes/footer.html')

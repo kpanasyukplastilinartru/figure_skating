@@ -1,0 +1,27 @@
+.contacts{
+    &__adress{
+        font-size: 16px;
+    }
+    &__item{
+        &-desc{
+            // margin-top: 12px;
+            color: $grey;
+
+        }
+
+        & + &{
+            margin-top: 31px;
+        }
+    }
+    &__link{
+        font-size: 24px;
+        transition: .3s;
+        color: $black;
+        &:hover{
+            color: $blue;
+        }
+    }
+    &__social{
+        margin-top: 35px;
+    }
+}
