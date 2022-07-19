@@ -173,7 +173,7 @@ const svgSprite = () => {
 
 const fonts = () => {
     gulp.src([
-        srcFolder + '/fonts/**.*.ttf',
+        srcFolder + '/fonts/**/*.ttf',
     ])
     .pipe(gulpTTFtoWOFF())
     .pipe(gulp.dest(distFolder + '/fonts/'))

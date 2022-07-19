@@ -1,0 +1,23 @@
+.map{
+    height: 400px;
+    &__icon{
+        height: 53px;
+        width: 53px;
+        border-radius: 50%;
+        background-color: $black;
+        transition: .3s;
+
+        &:hover{
+            background-color: $blue;
+
+            svg{
+                fill: $white;
+            }
+        }
+        svg{
+            height: 100%;
+            width: 100%;
+            transition: .3s;
+        }
+    }
+}

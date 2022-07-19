@@ -1,0 +1,22 @@
+.social{
+    &__list{
+        margin: -5px -10px;
+    }
+    &__item{
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    &__link{
+        display: block;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 30px;
+        width: 30px;
+
+        svg{
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

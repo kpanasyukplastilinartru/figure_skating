@@ -1,0 +1,20 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $black;
+    background-color: #F8F9FA;
+}
+.container{
+    max-width: 1440px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    &--align-center{
+        align-items: center;
+    }
+}

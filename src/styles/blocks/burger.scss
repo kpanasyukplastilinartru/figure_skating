@@ -1,0 +1,22 @@
+.burger{
+    display: flex;
+    flex-direction: column;
+    height: 34px;
+    width: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &__item{
+        transition: .3s;
+        background-color: $black;
+        height: 2px;
+        width: 100%;
+        &:nth-child(2){
+            width: 50%;
+        }
+
+        & + &{
+            margin-top: 9px;
+        }
+    }
+}

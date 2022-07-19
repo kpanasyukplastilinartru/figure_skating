@@ -1,0 +1,16 @@
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_21" data-name="Прямоугольник 21" width="14" height="14" fill="#848788"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_12" data-name="Сгруппировать 12" clip-path="url(#clip-path)">
+    <path id="Контур_1053" data-name="Контур 1053" d="M12.3,0H1.7A1.7,1.7,0,0,0,0,1.7V12.3A1.7,1.7,0,0,0,1.7,14H12.3A1.7,1.7,0,0,0,14,12.3V1.7A1.7,1.7,0,0,0,12.3,0m.2,12.3a.2.2,0,0,1-.2.2H1.7a.2.2,0,0,1-.2-.2V4h11Zm0-9.8H1.5V1.7a.2.2,0,0,1,.2-.2H12.3a.2.2,0,0,1,.2.2Z" fill="#848788"/>
+    <rect id="Прямоугольник_15" data-name="Прямоугольник 15" width="1.5" height="1.5" transform="translate(2.944 5.654)" fill="#848788"/>
+    <rect id="Прямоугольник_16" data-name="Прямоугольник 16" width="1.5" height="1.5" transform="translate(9.556 5.654)" fill="#848788"/>
+    <rect id="Прямоугольник_17" data-name="Прямоугольник 17" width="1.5" height="1.5" transform="translate(6.25 5.654)" fill="#848788"/>
+    <rect id="Прямоугольник_18" data-name="Прямоугольник 18" width="1.5" height="1.5" transform="translate(2.944 8.63)" fill="#848788"/>
+    <rect id="Прямоугольник_19" data-name="Прямоугольник 19" width="1.5" height="1.5" transform="translate(9.556 8.63)" fill="#848788"/>
+    <rect id="Прямоугольник_20" data-name="Прямоугольник 20" width="1.5" height="1.5" transform="translate(6.25 8.63)" fill="#848788"/>
+  </g>
+</svg>

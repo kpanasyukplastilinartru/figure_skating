@@ -1,0 +1,14 @@
+.main-grid{
+    &__title{
+        text-align: center;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    &__row{
+        &--sidebar-left{
+            flex-direction: column-reverse;
+        }
+    }
+    
+}

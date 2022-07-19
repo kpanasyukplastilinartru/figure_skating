@@ -1,0 +1,20 @@
+.showmore{
+    &__link{
+        display: block;
+        border-radius: 25px;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $black;
+        transition: .3s;
+        padding: 11px;
+        box-sizing: border-box;
+        text-align: center;
+        &:hover{
+            background-color: $blue;
+        }
+        &:active{
+            border-radius: 0;
+            background-color: $black;
+        }
+    }
+}

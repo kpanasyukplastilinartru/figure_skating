@@ -1,0 +1,20 @@
+.tegs{
+    &__row{
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+    &__item{
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    &__link{
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: 500;
+        color: $black;
+        background-color: $white;
+        padding: 3.5px 7px;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+}

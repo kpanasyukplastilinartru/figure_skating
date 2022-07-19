@@ -1,0 +1,25 @@
+.hero{
+    &__slider{
+        position: relative;
+        overflow: hidden;
+    }
+    &__arrows{
+        display: none;
+    }
+    &__swiper-pagination{
+        position: static;
+        .swiper-pagination-bullet{
+            width: 20px;
+            height: 3px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: $black;
+            opacity: 1;
+            transition: .3s;
+            &.swiper-pagination-bullet-active{
+                background-color: $blue;
+                width: 50px;
+            }
+        }
+    }
+}

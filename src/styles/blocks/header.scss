@@ -1,0 +1,36 @@
+.header{
+    padding: 10px 0;
+    background-color: $white;
+    &__logo{
+        margin-right: 15px;
+    }
+    &__buttons{
+        display: flex;
+        margin: 0 -5px 0 auto;
+    }
+    &__button{
+        & + &{
+            margin-left: 10px;
+        }
+        a,button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            display: block;
+            height: 34px;
+            width: 34px;
+            padding: 5px;
+            box-sizing: border-box;
+
+            svg{
+                display: block;
+                height: 100%;
+                width: 100%;
+                fill: $black;
+            }
+        }
+    }
+    &__social{
+        display: none;
+    }
+}
