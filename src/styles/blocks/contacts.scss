@@ -1,10 +1,11 @@
 .contacts{
     &__adress{
         font-size: 16px;
+        letter-spacing: -0.6px;
     }
     &__item{
         &-desc{
-            // margin-top: 12px;
+            margin-top: 8px;
             color: $grey;
 
         }
@@ -17,11 +18,13 @@
         font-size: 24px;
         transition: .3s;
         color: $black;
+        letter-spacing: -0.9px;
+        line-height: 27px;
         &:hover{
             color: $blue;
         }
     }
     &__social{
-        margin-top: 35px;
+        margin: 27px 0 20px;
     }
 }

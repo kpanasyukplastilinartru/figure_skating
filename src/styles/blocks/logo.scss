@@ -19,6 +19,9 @@
     }
     &__right{
         display: none;
+        @include for-sm(){
+            display: block;
+        }
     }
     &__title,&__desc{
         font-size: 16px;

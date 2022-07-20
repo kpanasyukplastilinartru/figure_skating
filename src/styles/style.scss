@@ -11,6 +11,9 @@ body{
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
+    @include for-sm(){
+        padding: 0 20px;
+    }
 }
 .row{
     display: flex;

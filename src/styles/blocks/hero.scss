@@ -1,4 +1,5 @@
 .hero{
+    line-height: 0;
     &__slider{
         position: relative;
         overflow: hidden;
@@ -8,6 +9,12 @@
     }
     &__swiper-pagination{
         position: static;
+        @include for-sm(){
+            margin-top: 9px;
+        }
+        @include for-md(){
+            display: none;
+        }
         .swiper-pagination-bullet{
             width: 20px;
             height: 3px;

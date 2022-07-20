@@ -1,0 +1,26 @@
+.docs{
+    &__row{
+        flex-wrap: wrap;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        color: $grey;
+        transition: .3s;
+        &:hover{
+            color: $blue;
+        }
+        svg{
+            height: 35px;
+            width: 32px;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+    }
+    &__item-container{
+        width: 100%;
+        & + &{
+            margin-top: 8px;
+        }
+    }
+}

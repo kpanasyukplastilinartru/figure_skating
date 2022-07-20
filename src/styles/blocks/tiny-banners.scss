@@ -1,0 +1,53 @@
+.tiny-banners{
+   &__item{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    border-radius: 5px;
+    &:hover{
+        .tiny-banners__image{
+            transform: scale(1.05);
+        }
+    }
+    & + &{
+        margin-top: 20px;
+    }
+    &--type-1{
+        min-height: 306px;
+    }
+    &--type-2{
+        display: block;
+        height: 336px;
+    }
+   }
+    &__content{
+        position: relative;
+        z-index: 5;
+    }
+   
+   
+    &__image{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: .3s;
+        border-radius: 5px;
+    }
+    &__name{
+        font-size: 22px;
+        margin-bottom: 7px;
+        color: $white;
+    }
+    &__desc{
+        color: $white;
+        margin-bottom: 15px;
+    }
+    &__button{
+        display: inline-flex;
+        padding: 11px 25px;
+    }
+}

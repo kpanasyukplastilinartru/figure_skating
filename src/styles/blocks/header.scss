@@ -1,12 +1,22 @@
 .header{
+    position: sticky;
+    left: 0;
+    top: 0;
     padding: 10px 0;
     background-color: $white;
+    z-index: 500;
     &__logo{
         margin-right: 15px;
     }
     &__buttons{
         display: flex;
         margin: 0 -5px 0 auto;
+        @include for-sm(){
+            margin: 0 -5px 0 19px;
+        }
+        @include for-md(){
+            display: none;
+        }
     }
     &__button{
         & + &{
@@ -29,8 +39,63 @@
                 fill: $black;
             }
         }
+        &--phone{
+            @include for-sm(){
+                display: none;
+            }
+        }
+        &--search{
+           
+        }
     }
     &__social{
         display: none;
+        @include for-md(){
+            display: block;
+            margin-left: auto;
+        }
+    }
+    &__burger{
+        @include for-sm(){
+            margin-left: auto;
+        }
+        @include for-md(){
+            display: none;
+        }
+    }
+    &__links{
+        display: none;
+        @include for-md(){
+            display: flex;
+            margin-left: 40px;
+
+        }
+    }
+    &__link-container{
+        position: relative;
+        box-sizing: border-box;
+        & + &{
+            margin-left: 20px;
+            padding-left: 20px;
+            &:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                height: 30px;
+                width: 1px;
+                background-color: $grey2;
+                top: 50%;
+                transform: translateY(-50%);
+
+            }
+        }
+    }
+    &__link{
+        font-size: 18px;
+        color: $black;
+        transition: .3s;
+        &:hover{
+            color: $blue;
+        }
     }
 }

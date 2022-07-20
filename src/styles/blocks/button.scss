@@ -1,0 +1,16 @@
+.button{
+    text-transform: uppercase;
+    
+    border-radius: 25px;
+    transition: .3s;
+    &--lit{
+        font-size: 12px;
+    }
+    &--black{
+        background-color: $black;
+        color: $white;
+        &:hover{
+            background-color: $blue;
+        }
+    }
+}
