@@ -27,4 +27,19 @@
     &__social{
         margin: 27px 0 20px;
     }
+    &--dark{
+        .contacts__adress{
+            color: $white;
+        }
+        .contacts__link{
+            color: $white;
+        }
+        .contacts__social{
+            margin: 0 0 32px 0;
+        }
+        .contacts__item + .contacts__item{
+            margin-top: 20px;
+        }
+    }
+    
 }

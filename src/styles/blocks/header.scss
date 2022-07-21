@@ -4,7 +4,7 @@
     top: 0;
     padding: 10px 0;
     background-color: $white;
-    z-index: 500;
+    z-index: 1200;
     &__logo{
         margin-right: 15px;
     }
@@ -70,6 +70,10 @@
             margin-left: 40px;
 
         }
+        @include for-lg(){
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__link-container{
         position: relative;
@@ -77,6 +81,12 @@
         & + &{
             margin-left: 20px;
             padding-left: 20px;
+            @include for-lg(){
+                margin-left: 0;
+                margin-top: 5px;
+                padding-top: 5px;
+                padding-left: 0;
+            }
             &:before{
                 content: '';
                 position: absolute;
@@ -86,8 +96,18 @@
                 background-color: $grey2;
                 top: 50%;
                 transform: translateY(-50%);
+                @include for-lg(){
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    transform: none;
+                    height: 1px;
+                    width: 100%;
+                }
 
             }
+            
+
         }
     }
     &__link{

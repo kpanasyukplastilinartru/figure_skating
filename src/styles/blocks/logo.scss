@@ -8,7 +8,7 @@
             width: 80px;
             margin-right: 20px;
         }
-        @include for-lg(){
+        @include for-md(){
             height: 100px;
             width: 100px;
         }
@@ -25,6 +25,9 @@
     }
     &__title,&__desc{
         font-size: 16px;
+        @include for-lg(){
+            font-size: 14px;
+        }
     }
 
 }

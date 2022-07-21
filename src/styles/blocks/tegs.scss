@@ -16,5 +16,10 @@
         padding: 3.5px 7px;
         border-radius: 25px;
         box-sizing: border-box;
+        transition: .3s;
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
     }
 }

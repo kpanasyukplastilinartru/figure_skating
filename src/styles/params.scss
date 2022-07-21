@@ -6,16 +6,16 @@ $borderColor:#E1E3E5;
 $white:#fff;
 $grey2:#707070;
 @mixin for-xl {
-    @media (min-width: 1200px) { @content; }
+    @media (min-width: 1367px) { @content; }
 }
 @mixin for-lg {
-    @media (min-width: 992px) { @content; }
+    @media (min-width: 992px) and (max-width:1200px) { @content; }
 }
 @mixin for-md {
-    @media (min-width: 768px) { @content; }
+    @media (min-width: 992px) { @content; }
 }
 @mixin for-sm {
-    @media (min-width: 526px) { @content; }
+    @media (min-width: 650px) { @content; }
 }
 @mixin for-exsm {
     @media (min-width: 320px) { @content; }

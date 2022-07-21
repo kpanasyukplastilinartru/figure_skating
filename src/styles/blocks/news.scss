@@ -42,6 +42,7 @@
     }
     &__toggler{
         display: none;
+        cursor: pointer;
         @include for-sm(){
             display: inline-flex;
             align-items: center;

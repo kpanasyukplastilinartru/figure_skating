@@ -8,13 +8,26 @@
     }
     &__title{
         text-align: center;
-        font-size: 32px;
-        font-weight: 400;
+       
         margin-bottom: 31px;
+
+        a{
+            font-size: 32px;
+            font-weight: 400;
+            transition: .3s;
+            color: $black;
+            &:hover{
+                color: $blue;
+            }
+        }
         @include for-sm(){
-            font-size: 40px;
+            
+            a{
+                font-size: 40px;
+            }
             margin-bottom: 24px;
         }
+
     }
     &__sidebar{
         display: none;
@@ -43,6 +56,8 @@
     }
     &__content{
         padding-top: 25px;
+        width: 100%;
+        min-width: 0;
         @include for-sm(){
             padding-top: 40px;
         }
