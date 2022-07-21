@@ -17,6 +17,9 @@
         border-radius: 25px;
         box-sizing: border-box;
         transition: .3s;
+        @include for-sm(){
+            font-size: 12px;
+        }
         &:hover{
             background-color: $blue;
             color: $white;

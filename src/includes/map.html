@@ -1,59 +1,40 @@
-<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=b1433269-e012-46e0-87b6-6f557d18cf2f" type="text/javascript"></script>
+<div id="map" class="main-grid__map map"></div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=b1433269-e012-46e0-87b6-6f557d18cf2f" type="text/javascript"></script>
 <script>
-    ymaps.ready(function () {
-                var myMap = new ymaps.Map('map', {
-                        center: [55.792148, 37.540922],
-                        zoom: 15,
-                        controls: [],
-                    });
-                    
-                    
-                    // Создаём макет содержимого.
+   ymaps.ready(function () {
+    var map = new ymaps.Map('map', {
+        center: [55.792148, 37.540922],
+        zoom: 10,
+        controls: []
+    });
+
+
+
+        // Создание метки с круглой активной областью.
+        var circleLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container"><div class="circle_layout"><div class="map__placemark"><svg class="icon icon-skate"><use xlink:href="images/sprite.svg#icon-skate"></use></svg></div></div></div>');
+
+        var circlePlacemark = new ymaps.Placemark(
+            [55.792148, 37.540922], {
+                // hintContent: 'Метка с круглым HTML макетом',
+                balloonContent: '<div class="map__title">г. Москва, ул. Лётчика Бабушкина, 1к1</div><div class="map__desc">Пн-Пт: 10:00 - 18:00</div>'
+            }, {
+                iconLayout: circleLayout,
+                hideIconOnBalloonOpen:false,
+                // Описываем фигуру активной области "Круг".
+                iconShape: {
+                    type: 'Circle',
+                    // Круг описывается в виде центра и радиуса
+                    coordinates: [10, 10],
+                    radius: 30
+                }
                 
-                    // MyIconLayout = ymaps.templateLayoutFactory.createClass([
-                    // '<div class="map__placemark"><svg class="icon icon-skate"><use xlink:href="images/sprite.svg#icon-skate"></use></svg></div>'].join('')),
-                    //     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                    //     hintContent: 'Собственный значок метки',
-                    //     balloonContent: 'Это красивая метка'
-                    // }, {
-                      
-                    //     iconLayout: MyIconLayout,
-            
-                    //     iconImageSize: [60, 60],
-                    //     hasBalloon:true,
-                    
-                        
-                    // });
+            }
+        );
+        map.geoObjects.add(circlePlacemark);
 
-                    var polygonLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container"><div class="polygon_layout">!</div></div>');
 
-                    var polygonPlacemark = new ymaps.Placemark(
-                        [55.662693, 37.558416], {
-                            hintContent: 'HTML метка сложной формы'
-                        }, {
-                            iconLayout: polygonLayout,
-                            // Описываем фигуру активной области "Полигон".
-                            iconShape: {   
-                                type: 'Polygon',
-                                // Полигон описывается в виде трехмерного массива. Массив верхнего уровня содержит контуры полигона. 
-                                // Первый элемента массива - это внешний контур, а остальные - внутренние.
-                                coordinates: [
-                                    // Описание внешнего контура полигона в виде массива координат.
-                                    [[-28,-76],[28,-76],[28,-20],[12,-20],[0,-4],[-12,-20],[-28,-20]]
-                                    // , ... Описание внутренних контуров - пустых областей внутри внешнего.
-                                ]
-                            }
-                        }
-                    );
-    map.geoObjects.add(polygonPlacemark);
 
-                   
-                 
-
-                // myMap.geoObjects
-                //     .add(myPlacemark)
-                  
-            });
-console.log("qqq")
-
-</script> -->
+    
+    });
+                                    
+</script>

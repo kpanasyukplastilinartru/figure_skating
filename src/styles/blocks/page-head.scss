@@ -1,0 +1,44 @@
+.page-head{
+    padding: 35px 0 25px;
+
+    + .main-grid{
+        padding-top: 0;
+    }
+
+    &__breadcrumbs{
+        margin-bottom: 9px;
+        @include for-md(){
+            margin-bottom: 23px;
+        }
+    }
+
+    &__title{
+        font-size: 32px;
+        color: $black;
+        font-weight: 400;
+        @include for-md(){
+            font-size: 40px;
+        }
+        a{
+            font-size: 32px;
+            color: $black;
+            transition: .3s;
+            font-weight: 400;
+            @include for-md(){
+                font-size: 40px;
+            }
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+    &__info{
+        margin: 30px 0 10px;
+        @include for-md(){
+            margin: 25px 0 10px;
+        }
+    }
+    &__date{
+        margin-right: 35px;
+    }
+}

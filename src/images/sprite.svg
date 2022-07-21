@@ -111,7 +111,7 @@
   <path  d="M10.9,0,6,4.9,1.1,0,0,1.1l6,6,6-6Z" transform="translate(0 0)" />
 </symbol>
 <symbol id="icon-upp" viewBox="0 0 16 21.61">
-  <path  d="M13.609,0,12.14,1.469l5.586,5.585H0V8.947H17.725L12.14,14.534,13.609,16l8-8Z" transform="translate(0 21.61) rotate(-90)" fill="#fff"/>
+  <path  d="M13.609,0,12.14,1.469l5.586,5.585H0V8.947H17.725L12.14,14.534,13.609,16l8-8Z" transform="translate(0 21.61) rotate(-90)"/>
 </symbol>
 
 </defs>
