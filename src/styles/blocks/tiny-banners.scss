@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 30px 25px;
+    padding: 23px 25px 30px 29px;
     border-radius: 5px;
     &:hover{
         .tiny-banners__image{
@@ -15,10 +15,16 @@
     }
     &--type-1{
         min-height: 306px;
+        @include for-xl(){
+            min-height: 350px;
+        }
     }
     &--type-2{
         display: block;
-        height: 336px;
+        min-height: 336px;
+        @include for-xl(){
+            min-height: 384px;
+        }
     }
    }
     &__content{
@@ -48,6 +54,6 @@
     }
     &__button{
         display: inline-flex;
-        padding: 11px 25px;
+        padding: 9px 19px;
     }
 }

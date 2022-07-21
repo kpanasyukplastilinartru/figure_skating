@@ -38,6 +38,9 @@
         }
         &-container{
             margin-bottom: 7px;
+            @include for-xl(){
+                margin-bottom: 3px;
+            }
         }
     }
     &__toggler{
@@ -86,6 +89,9 @@
     }
     &__tegs{
         margin-top: 7px;
+        @include for-xl(){
+            margin-top: 10px;
+        }
     }
 
     & + &{
