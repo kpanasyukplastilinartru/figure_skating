@@ -1,0 +1,198 @@
+@@include('includes/head.html', { 'title' : 'Календарь' })
+    <div class="wrapper">
+        @@include('includes/header.html')
+        <!--end header-->
+        <main class="main">
+            @@include('includes/main-menu.html')
+            <!-- end main-menu-->
+            <div class="page-head">
+                <div class="container">
+                    <nav class="page-head__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="/">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link breadcrumbs__link--last" href="#">
+                                    <svg class="icon icon-next"><use xlink:href="images/sprite.svg#icon-upp"></use></svg>
+                                    Календарь
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1 class="page-head__title">
+                        <a href="#">Календарь</a>
+                    </h1>
+                </div>
+            </div>
+            <div class="main-grid">
+                <div class="container">
+                    <div class="main-grid__row main-grid__row--sidebar-left row">
+                        <div class="main-grid__sidebar main-grid__sidebar--left">
+                            @@include('includes/section-menu.html')
+                           <div class="sidebar__contacts contacts">
+                            <div class="contacts__item">
+                                <div class="contacts__adress">
+                                    г. Москва, ул. Лётчика Бабушкина, 1к1
+                                </div>
+                                <div class="contacts__item-desc">
+                                    Пн-Пт: 10:00 - 18:00
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="contacts__link" href="tel:+74954710718">+7 (495) 471-07-18</a>
+                                <div class="contacts__item-desc">
+                                    Позвоните нам
+                                </div>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="contacts__link" href="mailto:ffk-moscow@gmail.com">ffk-moscow@gmail.com</a>
+                                <div class="contacts__item-desc">
+                                    Задавайте вопросы
+                                </div>
+                            </div>
+                            <div class="contacts__social social">
+                                <ul class="social__list row">
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon icon-Vk"><use xlink:href="images/sprite.svg#icon-Vk"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon icon-Telegram"><use xlink:href="images/sprite.svg#icon-Telegram"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon icon-whatsapp"><use xlink:href="images/sprite.svg#icon-whatsapp"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a class="social__link" href="#">
+                                            <svg class="icon icon-youtube-svgrepo-com"><use xlink:href="images/sprite.svg#icon-youtube-svgrepo-com"></use></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                           
+                        </div>
+                        <div class="main-grid__content">
+                            <div class="previews-card">
+                                <div class="previews-card__row row">
+                                    <div class="previews-card__item-container">
+                                        <a class="previews-card__item" href="#">
+                                            <div class="previews-card__item-wrap">
+                                                <img class="previews-card__item-logo" src="images/logo.svg" alt="">
+                                                <div class="previews-card__item-name">Календарь соревнований ФФКМ</div>
+                                            </div>
+                                            <div class="previews-card__item-bg" style="background:#02B2FF;"></div>
+                                            <img class="previews-card__snowflake" src="images/snowflake.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="previews-card__item-container">
+                                        <a class="previews-card__item" href="#">
+                                            <div class="previews-card__item-wrap">
+                                                <img class="previews-card__item-logo" src="images/logo2.png" alt="">
+                                                <div class="previews-card__item-name">Календарь соревнований ФФККР</div>
+                                            </div>
+                                            <div class="previews-card__item-bg" style="background: #4670F7;"></div>
+                                            <img class="previews-card__snowflake" src="images/snowflake.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="previews-card__item-container">
+                                        <a class="previews-card__item" href="#">
+                                            <div class="previews-card__item-wrap">
+                                                <img class="previews-card__item-logo" src="images/logo.svg" alt="">
+                                                <div class="previews-card__item-name">Календарь соревнований любителей ФФКМ</div>
+                                            </div>
+                                            <div class="previews-card__item-bg" style="background:#F7363B;"></div>
+                                            <img class="previews-card__snowflake" src="images/snowflake.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="previews-card__item-container">
+                                        <a class="previews-card__item" href="#">
+                                            <div class="previews-card__item-wrap">
+                                                <img class="previews-card__item-logo" src="images/logo.svg" alt="">
+                                                <div class="previews-card__item-name">Календарь тестирования базового скольжения</div>
+                                            </div>
+                                            <div class="previews-card__item-bg" style="background:#FED92B;"></div>
+                                            <img class="previews-card__snowflake" src="images/snowflake.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                         
+
+                            <div class="main-grid__bottom">
+                                <div class="main-grid__contacts contacts">
+                                    <div class="contacts__item">
+                                        <div class="contacts__adress">
+                                            г. Москва, ул. Лётчика Бабушкина, 1к1
+                                        </div>
+                                        <div class="contacts__item-desc">
+                                            Пн-Пт: 10:00 - 18:00
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <a class="contacts__link" href="tel:+74954710718">+7 (495) 471-07-18</a>
+                                        <div class="contacts__item-desc">
+                                            Позвоните нам
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <a class="contacts__link" href="mailto:ffk-moscow@gmail.com">ffk-moscow@gmail.com</a>
+                                        <div class="contacts__item-desc">
+                                            Задавайте вопросы
+                                        </div>
+                                    </div>
+                                    <div class="contacts__social social">
+                                        <ul class="social__list row">
+                                            <li class="social__item">
+                                                <a class="social__link" href="#">
+                                                    <svg class="icon icon-Vk"><use xlink:href="images/sprite.svg#icon-Vk"></use></svg>
+                                                </a>
+                                            </li>
+                                            <li class="social__item">
+                                                <a class="social__link" href="#">
+                                                    <svg class="icon icon-Telegram"><use xlink:href="images/sprite.svg#icon-Telegram"></use></svg>
+                                                </a>
+                                            </li>
+                                            <li class="social__item">
+                                                <a class="social__link" href="#">
+                                                    <svg class="icon icon-whatsapp"><use xlink:href="images/sprite.svg#icon-whatsapp"></use></svg>
+                                                </a>
+                                            </li>
+                                            <li class="social__item">
+                                                <a class="social__link" href="#">
+                                                    <svg class="icon icon-youtube-svgrepo-com"><use xlink:href="images/sprite.svg#icon-youtube-svgrepo-com"></use></svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                @@include('includes/map.html')
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end main-grid-->
+            <div class="banner-bottom">
+                <a href="#" class="banner-bottom__link">
+                    <picture class="banner-bottom__picture">
+                        <source srcset="images/banner2_320.jpg" media="(max-width: 500px)">
+                        <img src="images/banner2.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <!-- end banner-bottom-->
+        </main>
+        @@include('includes/main-footer.html')
+        <!--end footer-->
+    </div>
+@@include('includes/footer.html')

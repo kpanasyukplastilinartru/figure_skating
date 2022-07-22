@@ -2,11 +2,14 @@
     display: flex;
     align-items: center;
     color: $grey;
+    transition: .3s;
 
     svg{
         height: 14px;
         width: 14px;
         flex-shrink: 0;
         margin-right: 9px;
+        fill: $grey;
+        transition: .3s;
     }
 }

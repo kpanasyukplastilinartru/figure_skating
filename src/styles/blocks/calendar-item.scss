@@ -1,0 +1,112 @@
+.calendar-item{
+    background-color: $white;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover:not(.js-active){
+        background-color: $blue;
+        .calendar-item__title{
+            color: $white;
+        }
+        .date{
+            color: $white;
+            svg{
+                fill: $white;
+            }
+        }
+    }
+    &__head{
+        cursor: pointer;
+    }
+    &__title{
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    &__body{
+        display: none;
+        padding-top: 20px;
+        table{
+            width: 100%;
+            border-spacing: 0 1px;
+        }
+        thead{
+            display: none;
+            @include for-sm(){
+                display: table-header-group;
+            }
+        }
+        th{
+            text-align: left;
+            font-size: 16px;
+            padding: 13px 20px;
+            box-sizing: border-box;
+        }
+        td{
+            padding: 16px 20px;
+            box-sizing: border-box;
+            background-color: $tablebg;
+            font-size: 14px;
+            display: flex;
+            vertical-align: top;
+           
+            &:before{
+                content: attr(data-name);
+                min-width: 70px;
+                flex-shrink: 0;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+            &:first-child{
+                border-radius: 5px 5px 0 0;
+            }
+            &:last-child{
+                border-radius: 0 0 5px 5px;
+            }
+            @include for-sm(){
+                display: table-cell;
+                font-size: 16px;
+                &:before{
+                    display: none;
+                }
+                &:first-child{
+                    border-radius: 5px 0 0 5px;
+                    width: 12%;
+                }
+                &:nth-child(2){
+                    width: 28%;
+                }
+                &:nth-child(3){
+                    width: 20%;
+                }
+                &:nth-child(4){
+                    width: 20%;
+                }
+                &:last-child{
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+           
+        }
+        tr{
+            display: block;
+            @include for-sm(){
+                display: table-row;
+            }
+        }
+    }
+    tr + tr{
+        margin-top: 1px;
+    }
+    a{
+        color: $blue;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-underline-position: under;
+        transition: .3s;
+        &:hover{
+            text-decoration-color: $blue;
+        }
+    }
+}

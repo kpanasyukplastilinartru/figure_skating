@@ -11,9 +11,9 @@
     }
     &__title{
         text-align: center;
-       
         margin-bottom: 31px;
-
+        font-size: 32px;
+        font-weight: 400;
         a{
             font-size: 32px;
             font-weight: 400;
@@ -24,7 +24,7 @@
             }
         }
         @include for-sm(){
-            
+            font-size: 32px;
             a{
                 font-size: 40px;
             }
@@ -33,14 +33,19 @@
 
     }
     &__sidebar{
-        display: none;
+        &:not(.main-grid__sidebar--left-top){
+            display: none;
+            @include for-md(){
+                display: flex;
+            }
+        }
         @include for-md(){
             display: flex;
             flex-direction: column;
             width: 304px;
             box-sizing: border-box;
             flex-shrink: 0;
-            padding-top: 36px;
+            padding-top: 40px;
             border-top: 1px solid $borderColor;
             &--left{
                
@@ -55,6 +60,12 @@
     &__row{
         &--sidebar-left{
             flex-direction: column-reverse;
+            @include for-md(){
+                flex-direction: row;
+            }
+        }
+        &--sidebar-left-top{
+            flex-direction: column;
             @include for-md(){
                 flex-direction: row;
             }
@@ -77,28 +88,36 @@
             padding-left: 40px;
         }
     }
-    &__item{
-        padding-bottom: 38px;
-        border-bottom: 1px solid $borderColor;
-        margin-bottom: 36px;
-        @include for-sm(){
-            border: none;
-            padding-bottom: 0;
-            margin-bottom: 28px;
-        }
-    }
+    // &__item{
+    //     padding-bottom: 38px;
+        
+    //     @include for-sm(){
+    //         border: none;
+    //         padding-bottom: 0;
+    //         margin-bottom: 28px;
+    //     }
+    // }
     
 
     &__bottom{
+        padding-top: 38px;
+        border-top: 1px solid $borderColor;
+        margin-top: 36px;
         @include for-sm(){
             display: flex;
-
+            margin-top: 28px;
+            padding-top: 0;
+            border: none;
         }
     }
     &__contacts{
         flex-shrink: 0;
-        margin-right: 102px;
-        padding-top: 38px;
+        
+       
+        @include for-sm(){
+            padding-top: 38px;
+            margin-right: 102px;
+        }
         @include for-md(){
             display: none;
         }
@@ -117,6 +136,9 @@
             height: 400px;
             margin-top: 30px;
         }
+    }
+    &__docs{
+        margin-top: 30px;
     }
     
 }

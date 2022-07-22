@@ -1,0 +1,29 @@
+.tabs{
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+    &__item{
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    &__link{
+        display: block;
+        padding: 7px 17px;
+        box-sizing: border-box;
+        color: $black;
+        background-color: $white;
+        transition: .3s;
+        border-radius: 25px;
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
+        &--active{
+            color: $white;
+            background-color: $black;
+        }
+    }
+}

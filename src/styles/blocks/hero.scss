@@ -77,10 +77,11 @@
         }
     }
     &__swiper-pagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
         position: static;
-        @include for-sm(){
-            margin-top: 9px;
-        }
+        
         @include for-md(){
             display: none;
         }

@@ -1,0 +1,33 @@
+.gallery{
+    &__row{
+        margin: -16px -10px;
+        flex-wrap: wrap;
+    }
+    &__item-container{
+        width: 100%;
+        padding: 16px 10px;
+        box-sizing: border-box;
+        @include for-sm(){
+            width: 50%;
+        }
+        @include for-md(){
+            width: 33.3%
+        }
+    }
+    &__image-container{
+        position: relative;
+        overflow: hidden;
+        line-height: 0;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        &:hover{
+            img{
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__image{
+        border-radius: 10px;
+        transition: .3s;
+    }
+}

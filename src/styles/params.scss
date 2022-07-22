@@ -2,14 +2,16 @@
 $black:#161615;
 $blue:#02B2FF;
 $grey:#848788;
+$tablebg:#F8F9FA;
 $borderColor:#E1E3E5;
 $white:#fff;
 $grey2:#707070;
+$upp-button:#66d0ff;
 @mixin for-xl {
     @media (min-width: 1367px) { @content; }
 }
 @mixin for-lg {
-    @media (min-width: 992px) and (max-width:1200px) { @content; }
+    @media (min-width: 992px) and (max-width:1300px) { @content; }
 }
 @mixin for-md {
     @media (min-width: 992px) { @content; }

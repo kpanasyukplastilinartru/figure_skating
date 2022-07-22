@@ -1,7 +1,17 @@
 .sidebar{
     &__contacts{
+        display: none;
         margin-top: auto;
         padding-bottom: 28px;
+        @include for-md(){
+            display: block;
+        }
+        @include for-xl(){
+            padding-bottom: 38px;
+        }
+    }
+    &__content-block{
+        margin-bottom: 30px;
     }
     &__tiny-banners{
         margin-top: 33px;

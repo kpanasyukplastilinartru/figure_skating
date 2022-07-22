@@ -1,0 +1,139 @@
+.content-block{
+
+    img{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    > p{
+        font-size: 16px;
+    }
+    &--preview{
+        p,li{
+            font-size: 20px;
+        }
+    }
+    ul:not([class]),ol:not([class]){
+        li{
+            position: relative;
+            padding-left: 27px;
+            box-sizing: border-box;
+            display: block;
+            font-size: 16px;
+    
+           
+            &:before{
+                content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+            }
+        }
+    }
+    &__image{
+        line-height: 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        &:hover{
+            img{
+                transform: scale(1.05);
+            }
+        }
+        img{
+            border-radius: 10px;
+            transition: .3s;
+        }
+    }
+    li + li{
+        margin-top: 1em;
+        @include for-md(){
+            margin-top: 1.5em;
+        }
+    }
+    ul:not([class]){
+        li{
+            &::before{
+                border-radius: 3px;
+                height: 12px;
+                width: 12px;
+                background-color: $black;
+            }
+        }
+    }
+    ol:not([class]){
+        counter-reset: counter; 
+        li{
+            &:before{
+                top: 0;
+                counter-increment: counter;
+                content: counter(counter)"."; 
+            }
+        }
+    }
+    > *{
+        &:first-child{
+            margin-top: 0 !important;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    > *:not([class]){
+        margin: 1em 0;
+        @include for-md(){
+            margin: 1.5em 0;
+        }
+    }
+    .floated-image{
+        margin: 1.5em 0;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    &__gallery{
+        margin: 1.5em 0;
+    }
+    a{
+        color: $blue;
+        font-size: 16px;
+    }
+    &__links{
+        margin-top: 30px;
+    }
+    
+}
+.floated-image{
+    img{
+       
+        border-radius: 10px;
+    }
+    &__container{
+  
+      max-width: 480px;
+        margin-bottom: 15px;
+        
+        &--left{
+            @include for-md(){
+                float: left;
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+           
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+    &:after{
+        clear: both;
+        display: table;
+        width: 100%;
+    }
+}

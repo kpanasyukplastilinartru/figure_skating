@@ -1,8 +1,31 @@
 .page-head{
+    position: relative;
     padding: 35px 0 25px;
+    margin-bottom: 35px;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        height: 1px;
+        width: calc(100% - 20px);
+        background-color: $borderColor;
+        @include for-md(){
+            display: none;
+        }
+    }
+    @include for-md(){
+        margin-bottom: 0;
+    }
 
     + .main-grid{
         padding-top: 0;
+        .main-grid__content{
+            padding-top: 0;
+            @include for-md(){
+                padding-top: 40px;
+            }
+        }
     }
 
     &__breadcrumbs{
