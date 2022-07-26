@@ -5,4 +5,5 @@ $(".header__button--search").click(function(){
 $(".search-mobile__close-btn").click(function(){
     $(".search-mobile").removeClass("js-active");
     $(".shadow").removeClass("js-active");
+    $("body").removeClass("js-hidden")
 })

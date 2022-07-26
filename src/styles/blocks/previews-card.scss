@@ -10,16 +10,42 @@
         width: 100%;
         padding: 10px 5px;
         box-sizing: border-box;
+
+        
         @include for-sm(){
            width: 50%;
            padding: 5px;
+
+           &--w33{
+            width: 33.3%;
+           }
         }
+    }
+    &__block{
+        padding-top:8px;
+        box-sizing: border-box;
+        transition: .3s;
     }
     &__item{
         position: relative;
         overflow: hidden;
         display: block;
         border-radius: 10px;
+
+        &--with-anim{
+         .previews-card__item-wrap{
+            flex-direction: row;
+            &:hover{
+                .previews-card__block{
+                    transform: none;
+                }
+             }
+         }
+         .previews-card__block{
+            transform: translateY(83%);
+         }
+        
+        }
         &:hover{
             .previews-card__item-wrap{
                 background-color: transparent;
@@ -45,12 +71,13 @@
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
-            padding: 15px 20px 35px;
+            padding: 25px 20px;
             background-color: $white;
             border-radius: 10px;
             transition: .3s;
             @include for-sm(){
                 min-height: 250px;
+                padding: 15px 20px 33px;
             }
            
         }
@@ -85,6 +112,37 @@
         transform: scale(0.3) translateX(200px);
         // transform: translate(-150px,-150px) rotate(360deg)
         transition: .3s;
+    }
+    &__list{
+        margin-top: 19px;
+        list-style: none;
+        
+        li + li{
+            margin-top: 10px;
+        }
+        a{
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: $white;
+            font-size: 16px;
+            transition: .3s;
+            &:before{
+                content: '';
+                height: 2px;
+                width: 0;
+                // margin-right: 10px;
+                flex-shrink: 0;
+                background-color: $white;
+                transition: .3s;
+            }
+            &:hover{
+                &:before{
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
    
 }

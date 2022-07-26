@@ -1,4 +1,7 @@
 .calendar-item{
+    & + &{
+        margin-top: 10px;
+    }
     background-color: $white;
     padding: 15px 20px;
     box-sizing: border-box;
@@ -17,7 +20,18 @@
         }
     }
     &__head{
+        position: relative;
         cursor: pointer;
+        &:before{
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: -15px;
+            width: calc(100% + 40px);
+            height: calc(100% + 30px);
+            border-radius: 10px;
+            cursor: pointer;
+        }
     }
     &__title{
         font-size: 22px;

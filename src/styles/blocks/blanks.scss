@@ -1,0 +1,39 @@
+.blanks{
+    &__title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+    &__item{
+        position: relative;
+        background-color: $white;
+        display: flex;
+        padding: 14px 55px 14px 20px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: $black;
+        box-sizing: border-box;
+        transition: .3s;
+        &:hover{
+            color: $white;
+            background-color: $blue;
+            svg{
+                fill: $white;
+            }
+        }
+
+        & + &{
+            margin-top: 10px;
+        }
+    }
+    svg{
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        flex-shrink: 0;
+        height: 24px;
+        width: 24px;
+        fill: $black;
+        transition: .3s;
+    }
+}

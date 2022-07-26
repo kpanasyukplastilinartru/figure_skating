@@ -64,4 +64,12 @@
     &__date{
         margin-right: 35px;
     }
+
+    &__search-finded{
+        margin-top: 20px;
+        font-size: 18px;
+        span{
+            color: $grey;
+        }
+    }
 }

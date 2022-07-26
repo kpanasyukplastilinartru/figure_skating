@@ -4,6 +4,11 @@ body{
     line-height: 1.4;
     color: $black;
     background-color: #F8F9FA;
+
+    &.js-hidden{
+        position: relative;
+        overflow: hidden;
+    }
 }
 .container{
     max-width: 1460px;

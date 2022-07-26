@@ -1,0 +1,38 @@
+.registry{
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 15px 20px;
+        background-color: $white;
+        color: $black;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        transition: .3s;
+        @include for-md(){
+            flex-direction: row;
+        }
+        &:hover{
+            background-color: $blue;
+            color: $white;
+        }
+        & + &{
+            margin-top: 10px;
+            @include for-md(){
+                margin-top: 2px;
+            }
+        }
+        &__date{
+           
+            width: 100%;
+            flex-shrink: 0;
+            margin-top: 10px;
+            @include for-md(){
+                max-width: 200px;
+                margin-left: 20px;
+                margin-top: 0;
+            }
+        }
+    }
+}

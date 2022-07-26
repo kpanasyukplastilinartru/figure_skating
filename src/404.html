@@ -1,0 +1,29 @@
+@@include('includes/head.html', { 'title' : 'Ошибка 404. Страница не найдена' })
+    <div class="wrapper">
+        @@include('includes/header.html')
+        <!--end header-->
+        <main class="main">
+            @@include('includes/main-menu.html')
+            <div class="error-page">
+                <div class="container">
+                    <div class="error-page__row row">
+                        <div class="error-page__title">
+                            Ошибка 404. Страница не найдена
+                        </div>
+                        <div class="error-page__button-container">
+                            <a class="error-page__button button button--black"  href="#">ВЕРНУТЬСЯ НАЗАД</a>
+                        </div>
+                    </div>
+                    <div class="error-page__icon-container">
+                        <svg class="icon error-page__icon"><use xlink:href="images/sprite.svg#icon-404"></use></svg>
+                    </div>
+                </div>
+            </div>
+         
+        
+         
+        </main>
+        @@include('includes/main-footer.html')
+        <!--end footer-->
+    </div>
+@@include('includes/footer.html')
