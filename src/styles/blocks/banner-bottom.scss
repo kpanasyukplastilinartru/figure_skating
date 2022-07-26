@@ -1,3 +1,10 @@
 .banner-bottom{
     line-height: 0;
+
+    &__picture{
+        img{
+            max-width: auto;
+            width: 100%;
+        }
+    }
 }
