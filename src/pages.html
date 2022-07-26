@@ -1,0 +1,103 @@
+@@include('includes/head.html', { 'title' : 'Главная' })
+    <div class="wrapper">
+        @@include('includes/header.html')
+        <!--end header-->
+        <main class="main">
+            <div class="hero">
+                
+                    <div class="hero__slider">
+                        <div class="hero__swiper-container swiper-container">
+                            <div class="hero__swiper-wrapper swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <picture class="hero__picture">
+                                            <source srcset="images/banner320.jpg" media="(max-width: 500px)">
+                                            <img src="images/banner.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <picture class="hero__picture">
+                                            <source srcset="images/banner320.jpg" media="(max-width: 500px)">
+                                            <img src="images/banner.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <picture class="hero__picture">
+                                            <source srcset="images/banner320.jpg" media="(max-width: 500px)">
+                                            <img src="images/banner.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <picture class="hero__picture">
+                                            <source srcset="images/banner320.jpg" media="(max-width: 500px)">
+                                            <img src="images/banner.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__swiper-pagination swiper-pagination"></div>
+                        <div class="hero__arrows">
+                            <div class="hero__arrow hero__arrow--left"><svg class="icon icon-next"><use xlink:href="images/sprite.svg#icon-next"></use></svg></div>
+                            <div class="hero__arrow hero__arrow--right"><svg class="icon icon-next"><use xlink:href="images/sprite.svg#icon-next"></use></svg></div>
+                        </div>
+                    </div>
+               
+            </div>
+            <!-- end hero-->
+            @@include('includes/main-menu.html')
+            <!-- end main-menu-->
+            <div class="main-grid">
+                <div class="container">
+                   <div class="content-block">
+                    <ol>
+                        <li><a target="_blank" href="dist/index.html">Главная</a></li>
+                        <li><a target="_blank" href="dist/news.html">Новости</a></li>
+                        <li><a target="_blank" href="dist/news-item1.html">Новости - детальная 1</a></li>
+                        <li><a target="_blank" href="dist/news-item2.html">Новости детальная 2</a></li>
+                        <li><a target="_blank" href="dist/calendar.html">Календари - общая</a></li>
+                        <li><a target="_blank" href="dist/calendar-items.html">Календарь</a></li>
+                        <li><a target="_blank" href="dist/calendar-detail.html">Календарь - детальная</a></li>
+                        <li><a target="_blank" href="dist/docs.html">Документы</a></li>
+                        <li><a target="_blank" href="dist/general_docs.html">Общие Документы</a></li>
+                        <li><a target="_blank" href="dist/docs_inside.html">Документы детальная</a></li>
+                        <li><a target="_blank" href="dist/judges.html">Судьям</a></li>
+                        <li><a target="_blank" href="dist/coaches.html">Тренерам</a></li>
+                        <li><a target="_blank" href="dist/tests.html">Тесты</a></li>
+                        <li><a target="_blank" href="dist/general_info.html">Общая информация</a></li>
+                        <li><a target="_blank" href="dist/seminars.html">Семинары</a></li>
+                        <li><a target="_blank" href="dist/seminars_list.html">Семинары список 1</a></li>
+                        <li><a target="_blank" href="dist/seminars_list2.html">Семинары список 2</a></li>
+                        <li><a target="_blank" href="dist/registry.html">Регистр</a></li>
+                        <li><a target="_blank" href="dist/registry_list.html">Регистр список</a></li>
+                        <li><a target="_blank" href="dist/registry_inside.html">Регистр детальная</a></li>
+                        <li><a target="_blank" href="dist/contacts.html">Контакты</a></li>
+                        <li><a target="_blank" href="dist/search.html">Результаты поиска</a></li>
+                        <li><a target="_blank" href="dist/404.html">404</a></li>
+                        <li><a target="_blank" href="dist/text-page.html">Типовая внутренняя страница</a></li>
+     
+                    </ol>
+                   </div>
+                </div>
+            </div>
+            <!-- end main-grid-->
+            <div class="banner-bottom">
+                <a href="#" class="banner-bottom__link">
+                    <picture class="banner-bottom__picture">
+                        <source srcset="images/banner2_320.jpg" media="(max-width: 500px)">
+                        <img src="images/banner2.jpg" alt="">
+                    </picture>
+                </a>
+            </div>
+            <!-- end banner-bottom-->
+        </main>
+        @@include('includes/main-footer.html')
+        <!--end footer-->
+    </div>
+@@include('includes/footer.html')
