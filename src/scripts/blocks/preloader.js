@@ -57,7 +57,9 @@ $(document).ready(function() {
     if($.cookie("popupnotify") == null) {
         console.log("cookie")
       $.cookie("popupnotify", "2");
-     } 
+     } else {
+        console.log("mmhuita")
+     }
     });
 $(document).ready(function(){
     preloader()
