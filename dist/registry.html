@@ -612,7 +612,115 @@
         <!--end footer-->
     </div>
 
+       <div class="g-hidden">
+        <div class="b-modal prezidium-modal" id="prezidium">
+            <div class="modal-content">
+                <div class="prezidium-modal__head">
+                    <div class="prezidium-modal__head-left">
+                        <div class="prezidium-modal__title">
+                            Галиев Сержан Ахметжанович
+                        </div>
+                        <div class="prezidium-modal__position">
+                            Заместитель генерального директора
+                        </div>
+                    </div>
+                   
+                    <div class="modal-content__close arcticmodal-close">
+                        <svg class="icon icon-close">
+                            <use xlink:href="images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="prezidium-modal__body row">
+                    <div class="prezidium-modal__image-container">
+                        <img src="images/prezidium/2.jpg" alt="">
+                    </div>
+                    <div class="prezidium-modal__content-block content-block">
+                        <ul>
+                            <li>Курирует исполнение календарного плана спортивных и физкультурных мероприятий Федерации, взаимодействует с главными судьями, руководителями спортсооружений и организаторами мероприятий.
+                            </li>
+                            <li>
+                                Проводит анализ и дает предложения по совершенствованию организации и проведения соревнований. 
+                         
+                            </li>
+                            <li>Организует и контролирует проведение рекламных кампаний. 
+                            </li>
+                            <li> Проводит прием представителей государственных учреждений и негосударственных организаций, граждан, специалистов спорта по вопросам деятельности Федерации. 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+               
+            </div>
+        </div>
+        <div class="b-modal report" id="report">
+            <div class="modal-content">
+                <div class="prezidium-modal__head">
+                    <div class="prezidium-modal__head-left">
+                        <div class="prezidium-modal__title">
+                            Отчет
+                        </div>
+                     
+                    </div>
+                   
+                    <div class="modal-content__close arcticmodal-close">
+                        <svg class="icon icon-close">
+                            <use xlink:href="images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <form action="#" class="report-form form">
+                    <div class="report__row row">
+                        <div class="report__item-container report__item-container--w50">
+                            <select class="select form__select">
+                                <option value="">
+                                    Вид отчета
+                                </option>
+                                <option value="">
+                                    Вид отчета
+                                </option>
+                            </select>
+                        </div>
+                        <div class="report__item-container report__item-container--w50">
+                            <select class="select form__select" required name="discipline">
+                                <option value="">
+                                    Дисциплина
+                                </option>
+                                <option value="">
+                                    Дисциплина
+                                </option>
+                            </select>
+                        </div>
+                        <div class="report__item-container">
+                            <input type="text" class="form__input" required placeholder=" " name="name">
+                            <label class="form__label">ФИО<span class="form__label-req">*</span></label>
+                        </div>
+                        <div class="report__item-container">
+                            <input type="text" class="form__input" required placeholder=" " name="date">
+                            <label class="form__label">Название соревнования, дата<span class="form__label-req">*</span></label>
+                        </div>
+                        <div class="report__item-container">
+                            <textarea class="form__textarea"  required placeholder=" " name="coment"></textarea>
+                            <label class="form__label">Комментарий<span class="form__label-req">*</span></label>
+                        </div>
+                    </div>
+                    <div class="form__policy">
+                        Нажимая на кнопку, вы даете согласие на <a href="#">обработку персональных данных</a>
+                    </div>
+                    <button class="form__button button button--black">ОТПРАВИТЬ</button>
+                </form>
+
+               
+               
+            </div>
+        </div>
+       </div>
+       
         <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="scripts/script.min.js"></script>
         <!-- / Scripts -->
 

@@ -1,0 +1,18 @@
+.report{
+    &__row{
+       flex-wrap: wrap;
+        margin: -10px;
+        padding-top: 20px;
+    }
+    &__item-container{
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        &--w50{
+            @include for-sm(){
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+.direction-detail{
+    &__row{
+        flex-direction: column;
+        @include for-md(){
+            flex-direction: row;
+        }
+    }
+    &__title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 11px;
+    }
+    &__desc{
+        color: $grey;
+        margin-bottom: 32px;
+    }
+    &__image{
+        margin-bottom: 20px;
+       @include for-md(){
+        width: 333px;
+        flex-shrink: 0;
+        height: 500px;
+        margin-right: 40px;
+        margin-bottom: 0;
+       }
+    }
+    
+}
+.direction-grid{
+    margin-top: 60px;
+    &__row{
+        flex-wrap: wrap;
+        margin: -20px -10px;
+    }
+    &__item-container{
+        padding: 20px 10px;
+        width: 100%;
+        box-sizing: border-box;
+        @include for-sm(){
+            width: 50%;
+        }
+        @include for-md(){
+            width: 25%;
+        }
+    }
+    
+}
+.direction-item{
+    cursor: pointer;
+    &:hover{
+        .direction-item__title{
+            color: $blue;
+        }
+    }
+    &__image-container{
+        position: relative;
+        overflow: hidden;
+        height: 368px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        &:hover{
+            img{
+                transform: scale(1.1);
+                border-radius: 10px;
+            }
+        }
+
+        img{
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .3s;
+        }
+    }
+    &__title{
+        font-size: 13px;
+        display: block;
+        color: $black;
+        display: block;
+        margin-bottom: 5px;
+    }
+    &__position{
+        color: $grey;
+        font-size: 14px;
+    }
+}
+.prezidium-modal{
+    &__head{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 30px;
+        margin-top: -11px;
+    }
+    &__position{
+        color: $grey;
+    }
+    &__image-container{
+        margin-bottom: 20px;
+        @include for-sm(){
+            width: 200px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+            margin-bottom: 0;
+            margin-right: 30px;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: .3s;
+            }
+        }
+    }
+    &__body{
+        margin-top: 27px;
+        flex-direction: column;
+        @include for-sm(){
+            flex-direction: row;
+        }
+    }
+    &__content-block{
+        max-height: 358px;
+        width: 100%;
+        padding-right: 30px;
+        box-sizing: border-box;
+        .simplebar-track.simplebar-vertical{
+            width: 4px;
+            background-color: #E1E3E5;
+        }
+        .simplebar-scrollbar{
+            border-radius: 4px;
+            background-color: #848788;
+        }
+    }
+}

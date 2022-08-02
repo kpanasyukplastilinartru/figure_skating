@@ -22,7 +22,9 @@
         }
     }
     &__block{
+       @include for-sm(){
         padding-top:8px;
+       }
         box-sizing: border-box;
         transition: .3s;
     }
@@ -42,7 +44,9 @@
              }
          }
          .previews-card__block{
-            transform: translateY(83%);
+            @include for-sm(){
+                transform: translateY(83%);
+            }
          }
         
         }
@@ -116,6 +120,10 @@
     &__list{
         margin-top: 19px;
         list-style: none;
+        display: none;
+        @include for-sm(){
+            display: block;
+        }
         
         li + li{
             margin-top: 10px;
